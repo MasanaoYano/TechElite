@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP制作</title>
+    <meta name="description" content="課題">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/sanitize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<body id="js-ltarget0">
+
+    <header class="header">
+        <nav class="header-nav">
+            <h1 class="header-headline">
+                <a href="#js-ltarget0">ダミーサイト</a>
+            </h1>
+            <ul class="header-navlist">
+                <li class="header-navitem">
+                    <a href="#js-ltarget1">我が社について</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#js-ltarget2">サービス</a>
+                </li>
+                <li class="header-navitem">
+                    <a href="#js-ltarget3">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="hamburger-menu">
+        <li><a href="#js-ltarget1">我が社について</a></li>
+        <li><a href="#js-ltarget2"> サービス</a></li>
+        <li><a href="#js-ltarget3">お問い合わせ</a></li>
+    </ul>
+
+    <div class="toppage">
+        <strong>ダミーサイトへようこそ</strong>
+    </div>
+
+    <section class="section" id="js-ltarget1">
+        <h1 class="section-headline" >我が社について</h1>
+        <div class="section-description">
+            TechEliteは、顧客に自信を持って<span class="font-deco">「納品」</span>が
+            できるレベルのLPが作れるようになります。
+        </div>
+    </section>
+
+    <section class="section" id="js-ltarget2">
+        <h1 class="section-headline" >サービス</h1>
+        <ul class="service">
+            <li class="service-item" data-serv="0">
+                <a href="">Web制作</a>
+            </li>
+            <li class="service-item" data-serv="1">
+                <a href="">SEOコンサル</a>
+            </li>
+            <li class="service-item" data-serv="2">
+                <a href="">スマホアプリ開発</a>
+            </li>
+        </ul>
+        <div class="description">
+            <div class="description-item" data-desc="0">
+                sample<br>
+                sample<br>
+                sample
+            </div>
+            <div class="description-item" data-desc="1">
+                ssaammple<br>
+                ssaammple<br>
+                ssaammple
+            </div>
+            <div class="description-item" data-desc="2">
+                sssaaammmple<br>
+                sssaaammmple<br>
+                sssaaammmple
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="js-ltarget3">
+        <h1 class="section-headline" >お問い合わせ</h1>
+        <form action="./thanks.html" method="get">
+            <div class="form-group">
+                <label for="myname">お名前<span class="required"><sup>＊</sup>必須</span></label>
+                <input type="text" id="myname" name="myname" placeholder="例)田中 太郎" required>
+            </div>
+            <div class="form-group">
+                <label for="prefecture">お住まいの都道府県<span class="required"><sup>＊</sup>必須</span></label>
+                <select name="prefecture" id="prefecture" required>
+                    <option value="">---</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="city">お住まいの市区町村<span class="required"><sup>＊</sup>必須</span></label>
+                <select name="city" id="city" required>
+                    <option value="">---</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス<span class="required"><sup>＊</sup>必須</span></label>
+                <input type="email" id="email" name="email" placeholder="例)abcd123@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">電話番号<span class="non-required"><sup>＊</sup>任意</span></label>
+                <span id="inputError">半角数字で入力してください</span>
+                <span id="endError">入力する場合は10~11桁の半角数字で入力してください</span>
+                <input type="tel" id="tel" name="tel" inputmode="numeric" maxlength="11" placeholder="例)09012345678">
+            </div>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
+
