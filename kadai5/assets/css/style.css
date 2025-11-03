@@ -75,6 +75,9 @@ header
 .header-menu a {
     color: #fff;
 }
+.header-logo a {
+    display: block;
+}
 @media screen and (max-width: 600px) {
     .header, .header-nav {
         height: 40px;
@@ -576,4 +579,12 @@ footer .img {
     font-weight: 700;
     font-size: 28px;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .thanks-word {
+        margin-top: 65px;
+        margin-bottom: 25px ;
+        font-size: 18px;
+    }
 }
