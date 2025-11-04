@@ -78,7 +78,6 @@ function moveToSlide(index) {
   slidesContainer.style.transition = 'transform 0.5s ease';
   slidesContainer.style.transform = `translateX(${-(index + 1) * getSlideWidth()}px)`;
   currentIndex = index;
-  updateDots();
 }
 
 //ページネーション更新
