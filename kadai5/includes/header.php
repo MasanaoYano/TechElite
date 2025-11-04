@@ -10,12 +10,12 @@
                 <li><a href="./index.php#access">アクセス</a></li>
                 <li><a href="./index.php#reserve">席予約</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
+        <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
         <ul class="hamburger-menu">
             <li><a href="./index.php#schedule">スケジュール</a></li>
             <li><a href="./index.php#access">アクセス</a></li>

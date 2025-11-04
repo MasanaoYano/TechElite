@@ -50,8 +50,9 @@ $form = $_SESSION['form'] ?? [];
                 </tr>
                 <tr>
                     <th>メールアドレス</th>
-                    <td>
+                    <td class="confirm-table-mail">
                         <?= htmlspecialchars($form['email'], ENT_QUOTES) ?>
+                    </td>
                 </tr>
                 <tr>
                     <th>電話番号</th>
