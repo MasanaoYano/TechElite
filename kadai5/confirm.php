@@ -75,6 +75,6 @@ $form = $_SESSION['form'] ?? [];
     
     <?php include('./includes/footer.php'); ?>
 
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app-confirm.js"></script>
 </body>
 </html>
