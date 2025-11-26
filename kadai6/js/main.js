@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $Button.addEventListener("click", () => {
         if (!isOpen) {
-            $$MenuList.forEach(li => li.classList.add("open"));
+            $MenuList.forEach(li => li.classList.add("open"));
             $Button.textContent = "close";
 
         } else {
-            $$MenuList.forEach(li => li.classList.remove("open"));
+            $MenuList.forEach(li => li.classList.remove("open"));
             $Button.textContent = "read more";
 
             const y = $Schedule.getBoundingClientRect().top + window.pageYOffset;
