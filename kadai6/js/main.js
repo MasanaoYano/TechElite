@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         } else {
             $MenuList.forEach(li => li.classList.remove("open"));
-            $Button.textContent = "read more";
+            $Button.textContent = "Read more";
 
             const y = $Schedule.getBoundingClientRect().top + window.pageYOffset;
 
