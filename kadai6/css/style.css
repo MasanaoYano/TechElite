@@ -439,7 +439,6 @@ about
     background-repeat: no-repeat;
     padding-left: 72px;
     padding-right:72px;
-    border: 1px solid red;
 }
 .about {
     padding-top: 39px;
@@ -1610,7 +1609,6 @@ schedule
     .schedule .menu li .comment {
         height: 80%;
         width: calc(100% - 105px);
-        border: 1px solid red;
     }
     .schedule .menu li .comment span {
         font-size: 18px;
