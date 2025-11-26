@@ -707,7 +707,9 @@ summary
 .summary .datalist  .spacee {
     margin-right: 10px;
 }
-
+.summary .datalist dd {
+    max-width: 100%;
+}
 @media screen and (max-width: 950px) {
     .summary {
         margin-bottom: 257px;
