@@ -2168,3 +2168,57 @@ footer
 }
 
 
+.schedule .readmore-button {
+    display: none;
+}
+@media screen and (max-width: 787px) {
+    .schedule .readmore-button {
+        display: block;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        font-style: italic;
+        width: 115px;
+        height: 26px;
+        margin: 0 auto;
+    } 
+    .schedule .readmore-button:hover {
+        opacity: 0.7;
+    }
+    .schedule .menu > li:nth-child(n+4) {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease,
+        transform 0.4s ease;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .schedule .menu > li.open {
+        max-height: 400px;  
+        opacity: 1;
+        padding-top: 30px; 
+        margin-bottom: 10px;
+        transform: translateY(0);
+        overflow: visible;
+        }
+    .schedule .menu li:nth-child(3) {
+        background: linear-gradient(
+            to bottom,
+            #F1FBFF99 0%,
+            #F1FBFF99 75%,
+            rgba(0,0,0,0.05) 88%,
+            rgba(0,0,0,0.12) 94%,
+            rgba(0,0,0,0.18) 100%
+        );
+    }
+    .schedule .menu li:nth-child(3).open {
+        background: #F1FBFF99;
+    }
+}
