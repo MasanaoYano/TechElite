@@ -227,12 +227,20 @@ mainpage
         justify-content: center;
     }
     .mainpage .button {
-        padding: 20px 0 16px;
+        padding: 19px 0 16px;
         border: none;
         border-radius: 49px;
         position: relative;
-        margin: 0 auto;
         height: 49px;
+        width: 343px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 3px;
+        /* letter-spacing: 0.1rem; */
+    }
+    .mainpage .button .free {
+        font-size: 18px;
     }
     .mainpage .button .box {
         font-size: 20px;
@@ -247,8 +255,8 @@ mainpage
     }
     .mainpage .button span::after {
         content: "";
-        width: 47px;
-        height: 47px;
+        width: 37px;
+        height: 37px;
         position: absolute;
         right: 20px;
         top: 50%;
@@ -431,6 +439,7 @@ about
     background-repeat: no-repeat;
     padding-left: 72px;
     padding-right:72px;
+    border: 1px solid red;
 }
 .about {
     padding-top: 39px;
@@ -710,10 +719,12 @@ summary
     .summary .sponlymode {
         display: block;
     }
+    .summary .sponlymode.text {
+        overflow-wrap: break-word;
+    }
     .summary .datalist dd:nth-of-type(1) .text {
         line-height: 33px;
     }
-  
    .summary .datalist {
         position: relative;
    }
@@ -1589,6 +1600,7 @@ schedule
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
+        padding-top: 10px;
     }
     .schedule .menu li .imgboxman {
         height: 100%;
@@ -1598,6 +1610,7 @@ schedule
     .schedule .menu li .comment {
         height: 80%;
         width: calc(100% - 105px);
+        border: 1px solid red;
     }
     .schedule .menu li .comment span {
         font-size: 18px;
@@ -1614,14 +1627,14 @@ schedule
         flex-wrap: nowrap;
     }
     .schedule .menu li .imgboxman.three .sp-box > img {
-        width: 85px;
-        height: 85px;
+        width: 75px;
+        height: 75px;
     } 
     .schedule .menu li .imgboxman.three .tagname {
-        margin-top: -65px;
+        margin-top: -55px;
     }
     .schedule .menu li .imgboxman.three .tagname img {
-        width: 210px;
+        width: 200px;
     }
     .schedule .menu li .imgboxman.two {
         padding-top: 20px;
@@ -1630,17 +1643,23 @@ schedule
     .schedule .menu li .imgboxman.two .sp-box {
         display: flex;
         flex-wrap: nowrap;
-        gap: 10px;
+        gap: 6px;
     }
     .schedule .menu li .imgboxman.two .sp-box > img {
-        width: 88px;
-        height: 88px;
+        width: 78px;
+        height: 78px;
     }
     .schedule .menu li .imgboxman.two .tagname {
         margin-top: -45px;
     }
     .schedule .menu li .imgboxman.two .tagname .board img {
-        width: 180px;
+        width: 160px;
+    }
+    .schedule .menu li .imgboxman.two .tagname .batu {
+        padding-top: 10px;
+    }
+    .schedule .menu li .imgboxman.two .tagname .batu img {
+        width: 11px;
     }
     .schedule .menu .mc  {
          height: 150px;
@@ -1676,6 +1695,7 @@ schedule
         height: 103px;
         min-width: 275px;
         margin-bottom: 10px;
+        padding-top: 30px;
     }
     .schedule .menu li .imgboxtime img {
         width: 78px;
@@ -1691,47 +1711,48 @@ schedule
         width: 86px;
     }
     .schedule .menu li .imgboxman.three .sp-box > img {
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
     } 
     .schedule .menu li .imgboxman.two .sp-box > img {
         width: 68px;
         height: 68px;
     }
     .schedule .menu li .imgboxman.three {
-        padding-top: 10px;
+        margin-top: -40px;
     }
     .schedule .menu li .imgboxman.three .tagname img {
-        width: 190px;
+        width: 170px;
     }
     .schedule .menu li .imgboxman.three .tagname {
-        margin-top: -30px;
+        margin-top: -15px;
     }
     .schedule .menu li .imgboxman.three .sp-box {
         justify-content: space-between;
     }
     .schedule .menu li .imgboxman.two .tagname .board {
-        padding-top: 20px;
+        padding-top: 35px;
     }
     .schedule .menu li .imgboxman.two .tagname .board img {
         width: 150px;
     }
     .schedule .menu li .imgboxman.two .tagname .batu {
         padding-top: 10px;
-
     }
     .schedule .menu li .imgboxman.two .tagname .batu img {
         width: 12px;
     }
     .schedule .menu li .comment {
-        height: 80%;
+        height: 100%;
         width: calc(100% - 86px);
         padding-left: 10px;
         padding-right: 5px;
+        margin-top: 0px;
+        padding-bottom: 0;
     }
     .schedule .menu li .comment span {
         font-size: 16px;
-        line-height: 1.3;
+        line-height: 1.2;
     }
     .schedule .menu .mc {
         height: 103px;
@@ -1741,12 +1762,14 @@ schedule
     }
     .schedule .menu li .imgboxman.two {
         width: 150px;
+        margin-top: -60px;
     }
     .schedule .menu li .imgboxman.two .sp-box {
         gap: 5px;
     }
     .schedule .menu li .imgboxman {
         margin-right: 5px;
+        margin-top: -25px;
     }
     .schedule .menu .mc .imgboxman > img {
         width: 150px;
@@ -2079,7 +2102,5 @@ footer
         padding-bottom: 80px; 
     }
 }
-
-
 
 
