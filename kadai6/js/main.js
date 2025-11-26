@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const $Schedule = document.querySelector(".schedule");
     const $Button = document.querySelector(".readmore-button");
@@ -11,17 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+    const $HiddenList = Array.from($MenuList).slice(3);
     let isOpen = false;
 
     $Button.addEventListener("click", () => {
         if (!isOpen) {
-            $MenuList.forEach(li => li.classList.add("open"));
+            $HiddenList.forEach(li => li.classList.add("open"));
             $Button.textContent = "close";
+
         } else {
-            $MenuList.forEach(li => li.classList.remove("open"));
-            $Button.textContent = "Read more";
+            $HiddenList.forEach(li => li.classList.remove("open"));
+            $Button.textContent = "read more";
 
             const y = $Schedule.getBoundingClientRect().top + window.pageYOffset;
+
             window.scrollTo({
                 top: y,
                 behavior: "smooth"
