@@ -10,16 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    const $HiddenList = Array.from($MenuList).slice(3);
     let isOpen = false;
 
     $Button.addEventListener("click", () => {
         if (!isOpen) {
-            $HiddenList.forEach(li => li.classList.add("open"));
+            $$MenuList.forEach(li => li.classList.add("open"));
             $Button.textContent = "close";
 
         } else {
-            $HiddenList.forEach(li => li.classList.remove("open"));
+            $$MenuList.forEach(li => li.classList.remove("open"));
             $Button.textContent = "read more";
 
             const y = $Schedule.getBoundingClientRect().top + window.pageYOffset;
