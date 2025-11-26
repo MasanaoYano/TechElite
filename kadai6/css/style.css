@@ -645,7 +645,9 @@ summary
     align-items: center;
     justify-content: flex-start;
     border-bottom: 1px solid #C4C4C4;
+    word-break: keep-all;
     overflow-wrap: break-word;
+
 }
 .summary .datalist dd:nth-of-type(5) {
     border-bottom: none;
