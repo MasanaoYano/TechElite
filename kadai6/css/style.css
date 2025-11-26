@@ -645,9 +645,10 @@ summary
     align-items: center;
     justify-content: flex-start;
     border-bottom: 1px solid #C4C4C4;
-    word-break: keep-all;
     overflow-wrap: break-word;
-
+}
+.summary .datalist dd:nth-of-type(4) {
+    word-break: keep-all;
 }
 .summary .datalist dd:nth-of-type(5) {
     border-bottom: none;
@@ -708,9 +709,6 @@ summary
 }
 .summary .datalist  .spacee {
     margin-right: 10px;
-}
-.summary .datalist dd {
-    max-width: 100%;
 }
 @media screen and (max-width: 950px) {
     .summary {
