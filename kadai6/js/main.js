@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     $Button.addEventListener("click", () => {
         if (!isOpen) {
             $MenuList.forEach(li => li.classList.add("open"));
-            $Button.textContent = "close";
+            $Button.textContent = "Close";
 
         } else {
             $MenuList.forEach(li => li.classList.remove("open"));
