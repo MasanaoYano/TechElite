@@ -849,11 +849,10 @@ summary
         top: 7px;
         left: -13px;
     }
-    @media screen and (max-width: 360px ) {
-        .abosumcontainer {
-            padding-left: 1px;
-        }
-
+}
+@media screen and (max-width: 360px ) {
+    .abosumcontainer {
+        padding-left: 1px;
     }
 }
 
@@ -2099,7 +2098,7 @@ footer
     font-size: 14px;
     font-weight: 500;
     color: #fff;
-} */
+} 
 @media screen and (max-width: 530px) {
     .footer {
         height: 158px;
