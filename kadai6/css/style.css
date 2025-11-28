@@ -50,16 +50,19 @@ button
     background-color: #06c755;
     color: #fff;
     border: none;
-    z-index: 150;
+    z-index: 150;  
+    max-width: 65px;
+    min-height: 303px;
+    box-sizing: border-box;
+    white-space: nowrap;  
+    word-break: keep-all; 
+
 }
 
 .button.row .box { 
     font-size: 22px;
     font-weight: 700;
     line-height: 27px;
-    width: auto;
-    /* padding-left: 30px;
-    padding-right: 64px; */
     position: relative;
     letter-spacing: 0.3rem;
 }
@@ -415,11 +418,10 @@ about
 */
 .abosumcontainer {
     background-image: url(../img/Group\ 185.svg);
-    background-size: contain;        
+    background-size: 100% auto;  
     background-position: center -19px;
     background-repeat: no-repeat;
-    padding-left: 72px;
-    padding-right:72px;
+    min-height: 600px;  
 }
 .about {
     padding-top: 39px;
@@ -600,7 +602,6 @@ summary
     width: 191px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #C4C4C4;
 }
 .summary .datalist dt:nth-of-type(5) {
     border-bottom: none;
@@ -625,8 +626,16 @@ summary
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border-bottom: 1px solid #C4C4C4;
     overflow-wrap: break-word;
+    position: relative;
+}
+.summary .datalist dd::after {
+    content: "";
+    position: absolute;
+    left: -191px;          
+    bottom: 0;
+    width: calc(100% + 191px);
+    border-bottom: 1px dotted #C4C4C4;
 }
 .summary .datalist dd:nth-of-type(4) {
     word-break: keep-all;
@@ -1498,6 +1507,11 @@ schedule
     top: 8px;
     left: 7px;
 }
+.schedule .menu .mc .imgboxtime .time {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+}
 .schedule .menu li .imgboxtime .time span {
     font-size: 16px;
     font-weight: 700;
@@ -2048,13 +2062,14 @@ footer
     padding-right: 5px;
 }
 .footer .middle {
+    width: 100%;
     margin-top: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .footer .middle .footerline {
-    width: 1192px;
+    width: 83%;
     height: 1px;
     background-color: #FFFFFF99;
     overflow: hidden;
@@ -2084,7 +2099,7 @@ footer
     font-size: 14px;
     font-weight: 500;
     color: #fff;
-}
+} */
 @media screen and (max-width: 530px) {
     .footer {
         height: 158px;
