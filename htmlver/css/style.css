@@ -424,6 +424,7 @@ about
     min-height: 600px;  
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 80px;
 }
 .about {
     padding-top: 39px;
@@ -524,9 +525,9 @@ summary
     padding-right: 14px;
     margin-top: -2px;
 }
-.summary {
+/* .summary {
     margin-bottom: 80px;
-}
+} */
 .summary .datalist {
     display: flex;
     flex-wrap: wrap;
@@ -1365,9 +1366,9 @@ company
 */
 .companycontainer {
     background-image: url(../img/Group\ 192.svg);
-    background-size: contain 1412px;
-    background-position: -1px -24px;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: calc(50% - 16px) calc(50% - 118px);
 }
 .company {
     padding-bottom: 65px;
@@ -1415,11 +1416,6 @@ company
     white-space: pre;
 }
 
-@media screen and (max-width: 1276px) {
-    .company {
-        background-color: #ffffff;
-    }
-}
 @media screen and (max-width: 1150px) {
     .companycontainer {
         padding-left: 15px;
@@ -1427,9 +1423,9 @@ company
     }
 }
 @media screen and (max-width: 865px) {
-    .companycontainer {
+    /* .companycontainer {
         background-image: none;
-    }
+    } */
     .company .bigbox ul li .text {
         font-size: 16px;
     }
@@ -1843,6 +1839,9 @@ schedule
     }
 }
 @media screen and (max-width: 530px) {
+    .schedulecontainer {
+        padding-bottom: 58px;
+    }
     .schedule .section-title .second .line {
         position: relative;
     }
