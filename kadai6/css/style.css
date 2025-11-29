@@ -422,6 +422,9 @@ about
     background-position: center -19px;
     background-repeat: no-repeat;
     min-height: 600px;  
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
 }
 .about {
     padding-top: 39px;
@@ -522,9 +525,9 @@ summary
     padding-right: 14px;
     margin-top: -2px;
 }
-.summary {
-    margin-bottom: 68px;
-}
+/* .summary {
+    margin-bottom: 80px;
+} */
 .summary .datalist {
     display: flex;
     flex-wrap: wrap;
@@ -637,6 +640,10 @@ summary
     width: calc(100% + 191px);
     border-bottom: 1px dotted #C4C4C4;
 }
+.summary .datalist dd:nth-of-type(5):after {
+    content: "";
+    border-bottom: none;
+}
 .summary .datalist dd:nth-of-type(4) {
     word-break: keep-all;
 }
@@ -659,7 +666,7 @@ summary
 }
 
 .summary .datalist dd .iframe {
-    margin-top: 6px;
+    margin-top: -6px;
     width: 380px;
     height: 235px;
 }
@@ -700,7 +707,7 @@ summary
 .summary .datalist  .spacee {
     margin-right: 10px;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 975px) {
     .summary {
         margin-bottom: 257px;
     }
@@ -719,13 +726,13 @@ summary
    .iframe {
         position: absolute;
         bottom: -215px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 345px !important;
+        left: 0;
+        width: 380px !important;
         height: 200px !important;
+        margin-left: -10px;
     }
 }
-@media screen and (max-width: 530px ) {
+@media screen and (max-width: 600px ) {
     .summary .section-title .first {
         padding-left: 7px;
     }
@@ -849,10 +856,25 @@ summary
         top: 7px;
         left: -13px;
     }
+    .iframe {   
+        left: 0;
+        width: 345px !important;
+        height: 200px !important;
+        margin-left: -113px;
+    }
+    iframe {
+        width: 100% !important;;
+        height: 100% !important;
+    }
 }
-@media screen and (max-width: 360px ) {
-    .abosumcontainer {
-        padding-left: 1px;
+
+@media screen and (max-width: 389px ) {
+    .iframe {   
+        left: 0;
+        width: 300px !important;
+        height: 174px !important;
+        margin-left: -113px;
+        margin-bottom: -20px;
     }
 }
 
@@ -1007,6 +1029,9 @@ contents
     background-size: 57px 57px;
     background-position: center center;
     z-index: 100;
+}
+.contents .bigbox .right .img {
+    padding-left: 7px;
 }
 @media screen and (max-width: 900px) {
     .contents .bigbox {
@@ -1341,9 +1366,9 @@ company
 */
 .companycontainer {
     background-image: url(../img/Group\ 192.svg);
-    background-size: contain 1412px;
-    background-position: -1px -24px;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: calc(50% - 16px) calc(50% - 118px);
 }
 .company {
     padding-bottom: 65px;
@@ -1391,11 +1416,6 @@ company
     white-space: pre;
 }
 
-@media screen and (max-width: 1276px) {
-    .company {
-        background-color: #ffffff;
-    }
-}
 @media screen and (max-width: 1150px) {
     .companycontainer {
         padding-left: 15px;
@@ -1403,9 +1423,9 @@ company
     }
 }
 @media screen and (max-width: 865px) {
-    .companycontainer {
+    /* .companycontainer {
         background-image: none;
-    }
+    } */
     .company .bigbox ul li .text {
         font-size: 16px;
     }
@@ -1819,6 +1839,9 @@ schedule
     }
 }
 @media screen and (max-width: 530px) {
+    .schedulecontainer {
+        padding-bottom: 58px;
+    }
     .schedule .section-title .second .line {
         position: relative;
     }
