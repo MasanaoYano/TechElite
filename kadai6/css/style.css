@@ -464,6 +464,11 @@ about
     line-height: 45px;
     margin-top: -3px;
 }
+@media screen and (max-width: 975px) {
+    .abosumcontainer{
+        padding-bottom: 0px;
+    }
+}
 
 @media screen and (max-width: 865px) {
     .abosumcontainer {
