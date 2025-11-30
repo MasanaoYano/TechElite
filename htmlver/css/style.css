@@ -1,4 +1,4 @@
-@charset "#UTF-8";
+@charset "UTF-8";
 
 *{
     margin: 0;
@@ -48,7 +48,7 @@ button
     padding: 24px 19px 65px;
     border-radius: 10px 0 0 10px;
     background-color: #06c755;
-    color: #fff;
+    color: #ffffff;
     border: none;
     z-index: 150;  
     max-width: 65px;
@@ -56,7 +56,6 @@ button
     box-sizing: border-box;
     white-space: nowrap;  
     word-break: keep-all; 
-
 }
 
 .button.row .box { 
@@ -122,7 +121,7 @@ mainpage
 .mainpage .catchphrase p {
     font-size: 28px;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
     line-height: 33px;
     padding-right: 3px;
 }
@@ -145,17 +144,19 @@ mainpage
 }
 .mainpage .description .time {
     font-size: 43px;
-    color: #fff;
+    color: #ffffff;
     font-style: italic;
     font-weight: 700;
     margin-bottom: 14px;
     line-height: 43px;
     display: inline-block;
     height: 43px;
+    text-shadow: 0 2px 6px #000c4d;
 }
 .mainpage .description .day {
     font-size: 33px;
     font-weight: 700;
+    text-shadow: 0 2px 6px #000c4d;
 }
 .mainpage .description .place {
     font-size: 29px;
@@ -164,6 +165,7 @@ mainpage
     line-height: 35px;
     display: inline-block;
     height: 35px;
+    text-shadow: 0 2px 6px #000c4d;
 }
 .mainpage .description .place .space{
     letter-spacing: 0.3em;
@@ -300,10 +302,12 @@ mainpage
         line-height: 32px;
         display: inline-block;
         height: 32px;
+        text-shadow: 0 1px 3px #000c4d;
     }
     .mainpage .description .day {
         font-size: 18px;
         font-weight: 700;
+        text-shadow: 0 1px 3px #000c4d;
     }
     .mainpage .description .place {
         font-size: 16px;
@@ -312,6 +316,7 @@ mainpage
         display: inline-block;
         height: 19px;
         margin-right: 5px;
+        text-shadow: 0 1px 3px #000c4d;
     }
     .mainpage .description .place .space{
         letter-spacing: 0.2em;
@@ -346,6 +351,7 @@ section-title
     line-height: 18px;
     padding-right: 5px;
     padding-top: 1px;
+    color: #444545;
 }
 .section-title .second .line {
     position: relative;
@@ -389,6 +395,7 @@ section-title
         line-height: 12px;
         padding-right: 0px;
         padding-top: 1px;
+        color: #444545;
     }
     .section-title .second .line {
         position: relative;
@@ -451,6 +458,7 @@ about
     justify-content: center;
     text-align: center;
     margin-bottom: 40px;
+    color: #444545;
 }
 .fonttypejp {
     font-family: "Noto Sans JP", sans-serif;
@@ -460,7 +468,7 @@ about
     font-size: 18px;
     font-weight: 700;
     text-align: left;
-
+    color: #444545;
     line-height: 45px;
     margin-top: -3px;
 }
@@ -469,13 +477,12 @@ about
         padding-bottom: 0px;
     }
 }
-
 @media screen and (max-width: 865px) {
     .abosumcontainer {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+        padding-left: 15px;
+        padding-right: 15px;
     }
+}
 @media screen and (max-width: 656px) {
     .about .pconlymode {
         display: none;
@@ -483,7 +490,6 @@ about
     .about .description {
         text-align: justify;
     }
-
 }
 @media screen and (max-width: 530px) {
     .abosumcontainer {
@@ -507,6 +513,7 @@ about
         margin-top: -3px;
         padding-right:32px;
         padding-left: 32px;
+        color: #444545;
     }
 }
 
@@ -530,9 +537,6 @@ summary
     padding-right: 14px;
     margin-top: -2px;
 }
-/* .summary {
-    margin-bottom: 80px;
-} */
 .summary .datalist {
     display: flex;
     flex-wrap: wrap;
@@ -542,11 +546,12 @@ summary
     padding-bottom: 3px;
 }
 .summary .datalist dt:nth-of-type(1) .title {
-    padding-top: 3px;
+    padding-bottom: 2px;
     padding-right: 1px;
 }
 .summary .datalist dt:nth-of-type(2) {
     height: 125px;
+    padding-bottom: 3px;
 }
 .summary .datalist dt:nth-of-type(2) .title {
     padding-top: 2px;
@@ -556,13 +561,13 @@ summary
     padding-bottom: 27px;
 }
 .summary .datalist dt:nth-of-type(3) .title {
-    padding-top: 2px;
+    padding-top: 0px;
 }
 .summary .datalist dt:nth-of-type(4) {
     height: 125px;
 }
 .summary .datalist dt:nth-of-type(4) .title {
-    padding-top: 2px;
+    padding-top: 0px;
     padding-right: 1px;
 }
 .summary .datalist dt:nth-of-type(5) {
@@ -580,7 +585,7 @@ summary
     margin-top: -1px;
 }
 .summary .datalist dt:nth-of-type(5) .title {
-    padding-top: 3px;
+    padding-top: 0px;
     padding-right: 1px;
 
 }
@@ -596,8 +601,8 @@ summary
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-     word-break: normal;
-        overflow-wrap: normal;
+    word-break: normal;
+    overflow-wrap: normal;
 }
 .summary .datalist .access .item {
     margin-top: 10px;
@@ -619,14 +624,14 @@ summary
     line-height: 22px;
     border: 2px solid #FDD35C;
     color: #FDD35C;
-    padding: auto 14.5px;
+    padding: 0 0px;
     width: 170px;
     height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 22px;
-    font-style: "Noto Sans Jp";
+    font-family: "Noto Sans JP", sans-serif;
     border-radius: 30px;
 }
 .summary .datalist dd {
@@ -662,12 +667,14 @@ summary
     line-height: 22px;
     font-family: "Noto Sans JP", sans-serif;
     margin-top: -2px;
+    color: #444545;
 }
 .summary .datalist dd .access {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     margin-top: 1px;
+    color: #444545;
 }
 
 .summary .datalist dd .iframe {
@@ -760,7 +767,6 @@ summary
         width: 120px;
         display: flex;
         align-items: flex-start;
-        border-bottom: 1px solid #C4C4C4;
         padding-left: 10px;
         padding-top: 3px;
     }
@@ -774,14 +780,13 @@ summary
         font-size: 15px;
         line-height: 25px;
         border: 1px solid #FDD35C;
-        padding: auto 14px;
         width: 105px;
         height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         line-height: 22px;
-        font-style: "Noto Sans Jp";
+        font-family: "Noto Sans JP", sans-serif;
         border-radius: 30px;
         margin-left: -1px;
     }
@@ -868,8 +873,11 @@ summary
         margin-left: -113px;
     }
     iframe {
-        width: 100% !important;;
+        width: 100% !important;
         height: 100% !important;
+    }
+    .summary .datalist .access .item {
+        font-weight: 400;
     }
 }
 
@@ -944,7 +952,7 @@ contents
     text-align: center;
     border: 3px solid #FDD35C;
     border-radius: 0 0 10px 10px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .contents .bigbox dd .head {
     font-size: 14px;
@@ -1007,7 +1015,6 @@ contents
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    display: block;
     margin: 0 auto;
 }
 .contents .button .box {
@@ -1083,11 +1090,6 @@ contents
         align-items: center;
         justify-content: center;
     }
- 
-    .contents .bigbox dt {
-        font-size: 18px;
-        width: 336px;
-    }
     .contents .bigbox dd .head {
         font-size: 11px;
     }
@@ -1104,8 +1106,7 @@ contents
         width: 263px;
         height: 139px;
     }
-    /***********/
-      .contents {
+    .contents {
         padding-top: 36px;
     }
     .contents .section-title {
@@ -1116,13 +1117,12 @@ contents
         padding-left: 10px;
     }
     .contents .bigbox dt {
+        width: 336px;
         height: 41px;
         border-radius: 8px 8px 0 0;
         border-bottom: none;
-        font-size: 24px;
         font-weight: 700;
         line-height: 30px;
-        padding-top: 7px;
         padding-top: 5px;
         padding-right: 0;
         margin-left: 0px;
@@ -1169,14 +1169,10 @@ contents
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 2px;
     }
     .contents .bigbox .left {
         margin-bottom: 26px;
-    }
-}
-@media screen and (max-width: 700px) {
-    .contents .bigbox {
-        margin-bottom: 2px;
     }
     .contents {
         padding-bottom: 48px;
@@ -1256,15 +1252,15 @@ feature
     width: calc(100% - 298px);
     display: flex;
     align-items: center;
-    justify-items: center;
 }
 .feature dl dd .text {
     font-size: 16px;
     font-weight: 500;
-    font-family: "Noto Sans Jp", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     line-height: 24px;
     text-align: justify;
     padding-right: 10px;
+    color: #000000;
 }
 .feature dl dt:nth-of-type(1) img {
     width: 110.25px;
@@ -1288,6 +1284,8 @@ feature
 }
 .feature dl dd .text a {
     text-decoration: underline;
+    color: #000000;
+    font-weight: 500;
 }
 .feature dl dd .text a:hover {
     opacity: 0.7;
@@ -1310,8 +1308,8 @@ feature
             #FDD35C calc(100% - 10px),
             #FDD35C 100%
         );
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 17px;
+        padding-right: 17px;
     }
     .feature dl {
         display: flex;
@@ -1322,9 +1320,9 @@ feature
         height: auto;
     }
     .feature dl dt {
-        width: auto;
-        margin-top: 30px;
-        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     .feature dl dd {
         width: 100%;
@@ -1339,9 +1337,36 @@ feature
     .feature .section-title {
         margin-bottom: 15px;
     }
-    .feature dl dt:nth-of-type(n) img{
-        max-width: 85%;
-        height: auto;
+    .feature dl dt:nth-of-type(1) img{
+        width: 73.5px;
+        height: 20px;
+    }
+    .feature dl dt:nth-of-type(2) img{
+        width: 154px;
+        height: 13px;
+    }
+    .feature dl dt:nth-of-type(3) img{
+        width: 177px;
+        height: 20px;
+    }
+    .feature dl dt:nth-of-type(4) {
+        margin-top: 10px;
+    }
+    .feature dl dt:nth-of-type(4) img{
+        width: 124px;
+        height: 57px;
+    }
+    .feature dl dt:nth-of-type(5) img{
+        width: 82px;
+        height: 34px;
+    }
+    .feature dl dd:nth-of-type(4) img{
+        width: 77px;
+        height: 17px;
+    }
+    .feature dl dd:nth-of-type(4) .text div {
+        text-align: center;
+
     }
     .feature dl dd .text {
         font-size: 14px;
@@ -1408,6 +1433,7 @@ company
     font-weight: 500;
     line-height: 2;
     font-family: "Noto Sans JP", sans-serif;
+    color: #444545;
 }
 .company .plus {
     font-size: 20px;
@@ -1428,9 +1454,6 @@ company
     }
 }
 @media screen and (max-width: 865px) {
-    /* .companycontainer {
-        background-image: none;
-    } */
     .company .bigbox ul li .text {
         font-size: 16px;
     }
@@ -1646,7 +1669,6 @@ schedule
     font-weight: 700;
     line-height: 1.5;
     color: #444545;
-    letter-spacing: 8%;
 }
 .schedule .menu li .comment {
     padding-bottom: 20px;
@@ -1739,9 +1761,6 @@ schedule
     .schedule .menu .mc .imgboxman > img {
         width: 190px;
     }
-    
-
-
 }
 @media screen and (max-width: 787px) {
     .schedule .section-title {
@@ -1754,6 +1773,7 @@ schedule
     .schedulecontainer {
         padding-left: 10px;
         padding-right: 10px;
+        padding-bottom: 58px;
     }
     .schedule .menu {
         justify-content: center;
@@ -1905,6 +1925,7 @@ question
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    color: #000000;
 }
 .question .bigbox .qabox .qtext::before,
 .question .bigbox .qabox .atext::before {
@@ -1932,8 +1953,21 @@ question
 }
 .question .bigbox .qabox .atext.link {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-start;
+    padding-top: 10px;
+} 
+.question .bigbox .qabox .atext.link a {
+    color: #000000;
+    font-weight: 500;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.question .bigbox .qabox .atext.link span {
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
 }
 .question .bigbox .qabox:nth-of-type(3) .qtext {
     padding-top: 2px;
@@ -1985,8 +2019,7 @@ question
         margin-left: -3px;
     }    
     .question .bigbox .qabox .qtext,
-    .question .bigbox .qabox .atext
-    {
+    .question .bigbox .qabox .atext {
         margin-left: 71px;
         font-size: 16px;
         font-weight: 500;
@@ -1997,17 +2030,18 @@ question
         justify-content: flex-start;
         position: relative;
         padding-bottom: 20px;
+        color: #000000;
     }
     .question .bigbox .qabox .qtext::before,
     .question .bigbox .qabox .atext::before {
         content: "";
         position: absolute;
         left: -34px;
-        top: -2px;
+        top: 0px;
         width: 26px;
         height: 26px;
         border-radius: 50%;
-        color: #fff;
+        color: #ffffff;
         font-size: 14px;
         font-weight: 500;
         display: flex;
@@ -2025,8 +2059,20 @@ question
     }
     .question .bigbox .qabox .atext.link {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: flex-start;
+        padding-top: 0px;
+        margin-top: 0px;
+    } 
+    .question .bigbox .qabox .atext.link  a {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .question .bigbox .qabox .atext.link span {
+        color: #000000;
+        font-weight: 500;
+        font-size: 16px;
     }
     .question .bigbox .qabox:nth-of-type(3) .qtext {
         padding-top: 2px;
@@ -2047,7 +2093,6 @@ question
         margin-right: 3px;
         margin-top: -3px;
     } 
-    
 }
 
 /*---question---*/
@@ -2190,8 +2235,6 @@ footer
         color: #fff;
     }
 }
-
-
 @media screen and (max-width: 865px) {
     .mainpage .spbox {
         width: 100%;
@@ -2208,8 +2251,6 @@ footer
         padding-bottom: 80px; 
     }
 }
-
-
 .schedule .readmore-button {
     display: none;
 }
