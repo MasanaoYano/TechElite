@@ -151,12 +151,12 @@ mainpage
     line-height: 43px;
     display: inline-block;
     height: 43px;
-    text-shadow: 0 2px 6px #000c4d !important;
+    text-shadow: 0 2px 6px #000c4d;
 }
 .mainpage .description .day {
     font-size: 33px;
     font-weight: 700;
-    text-shadow: 0 2px 6px #000c4d !important;
+    text-shadow: 0 2px 6px #000c4d;
 }
 .mainpage .description .place {
     font-size: 29px;
@@ -165,7 +165,7 @@ mainpage
     line-height: 35px;
     display: inline-block;
     height: 35px;
-    text-shadow: 0 2px 6px #000c4d !important;
+    text-shadow: 0 2px 6px #000c4d;
 }
 .mainpage .description .place .space{
     letter-spacing: 0.3em;
@@ -302,12 +302,12 @@ mainpage
         line-height: 32px;
         display: inline-block;
         height: 32px;
-        text-shadow: 0 1px 3px #000c4d !important;
+        text-shadow: 0 1px 3px #000c4d;
     }
     .mainpage .description .day {
         font-size: 18px;
         font-weight: 700;
-        text-shadow: 0 1px 3px #000c4d !important;
+        text-shadow: 0 1px 3px #000c4d;
     }
     .mainpage .description .place {
         font-size: 16px;
@@ -316,7 +316,7 @@ mainpage
         display: inline-block;
         height: 19px;
         margin-right: 5px;
-        text-shadow: 0 1px 3px #000c4d !important;
+        text-shadow: 0 1px 3px #000c4d;
     }
     .mainpage .description .place .space{
         letter-spacing: 0.2em;
