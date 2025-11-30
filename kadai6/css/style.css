@@ -465,7 +465,7 @@ about
 
 .about .text {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: left;
     color: #444545;
     line-height: 45px;
@@ -606,6 +606,8 @@ summary
 .summary .datalist .access .item {
     margin-top: 10px;
     margin-left: 14px;
+    font-weight: 500;
+    color: #444545;
 }
 .summary .datalist .access .item .boxsub {
     margin-top: 7px;
@@ -879,7 +881,6 @@ summary
         font-weight: 400;
     }
 }
-
 @media screen and (max-width: 389px ) {
     .iframe {   
         left: 0;
@@ -1455,6 +1456,7 @@ company
 @media screen and (max-width: 865px) {
     .company .bigbox ul li .text {
         font-size: 16px;
+        font-weight: 500;
     }
     .company .bigbox ul {
         padding-right: 20px;
